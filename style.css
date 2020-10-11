@@ -420,8 +420,7 @@ a img:hover {
 
 .phone-icon:hover, .email-icon:hover {
     transform: scale(1.1);
-    /* text-decoration: none;
-    border-radius: .3rem; */
+    border-radius: .3rem;
 }
 
 .facebook-icon:hover {
