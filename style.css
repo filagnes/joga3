@@ -19,7 +19,7 @@ h1 {
 
 @media screen and (min-width: 768px) {
     h1 {
-        font-size: 15rem;
+        font-size: 12rem;
         margin-bottom: 10rem;
     }
 }
@@ -99,22 +99,23 @@ p {
         transition: .5s;
         color: #104734;
     }
+} 
+
+.nav-item:hover {
+    color: #104734;    
 }
 
-@media screen and (min-width: 768px) {
-    .nav-item:hover{
-        color: #104734;
-        transform: scale(1.1);
-        background-color: #f5f5f5;
+@media screen and (min-width: 1200px) {
+    .nav-item:hover {
+        transform: scale(1.2);
         border-radius: .3rem;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .active {
-        transform: scale(1.1);
-        background-color:#ffffff;
-        border: 1px solid #104734;
+        transform: scale(1.2);
+        background-color:#f5f5f5;
     }
 }
 
@@ -189,13 +190,13 @@ a img:hover {
 
 .classes {
     padding: 1rem;
-    margin: 4rem 0;
+    margin: 3rem 0;
 }
 
 @media screen and (min-width: 768px) {
     .classes {
-        padding: 3rem 10rem;
-        margin: 6rem 2rem;
+        padding: 2rem 10rem;
+        margin: 5rem 2rem;
     }
 }
 
@@ -331,8 +332,8 @@ a img:hover {
 }
 
 .logo-col {
-   width: 20rem; 
-   height: 20rem;
+   width: 18rem; 
+   height: 18rem;
    border-top-left-radius: .5rem;
    border-top-right-radius: .5rem;
    display: flex;
@@ -343,6 +344,8 @@ a img:hover {
 
 @media screen and (min-width: 768px) {
     .logo-col {
+        width: 20rem; 
+        height: 20rem;
         border-top-right-radius: 0;
         border-top-left-radius: .5rem;
         border-bottom-left-radius: .5rem;    
@@ -350,8 +353,8 @@ a img:hover {
 }
 
 .contact-col {
-    width: 20rem; 
-    height: 20rem;
+    width: 18rem; 
+    height: 18rem;
     background-color: #ffffff;
     padding: 1rem;
     border-bottom-left-radius: .5rem;
@@ -360,6 +363,8 @@ a img:hover {
     
 @media screen and (min-width: 768px) {
     .contact-col {
+        width: 20rem; 
+        height: 20rem;
         border-bottom-left-radius: 0;
         border-top-right-radius: .5rem;    
     }
@@ -387,7 +392,7 @@ a img:hover {
 
 .phone-nr {
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
 }
 
 .email-address {
@@ -395,22 +400,34 @@ a img:hover {
     font-size: 1.3rem;
 }
 
+.facebook-icon {
+    font-size: 2rem;
+    margin: .5rem;
+    transition: .5s;
+}
+
+.phone-icon, .email-icon {
+    transition: .5s;
+}
+
 .phone, .email {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 1.1rem;
     padding: .5rem;
     border-radius: .3rem;
-    border: 1px solid transparent;
+    transition: 1s;
 }
 
-.phone:hover, .email:hover {
-    text-align: center;
+.phone-icon:hover, .email-icon:hover {
+    transform: scale(1.1);
+    /* text-decoration: none;
+    border-radius: .3rem; */
+}
+
+.facebook-icon:hover {
+    transform: scale(1.2);
     text-decoration: none;
-    background-color: #f5f5f5;
-    color: #777777;
-    padding: .5rem;
     border-radius: .3rem;
-    border: 1px solid #104734;
 }
 
 .footer-col p {
@@ -439,15 +456,6 @@ button {
 
 button:hover {
     background-color: #f5f5f5;    
-}
-
-.f-icon-wraper {
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-}
-.f-icon {
-    font-size: 2.5rem;
 }
 
 /* Copyright */
